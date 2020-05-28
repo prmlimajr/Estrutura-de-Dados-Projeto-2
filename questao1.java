@@ -5,7 +5,7 @@ public class questao1 {
       String [][] dic = { 
               { "camelo", "camel" }, 
               { "gato", "cat" } , 
-              { "alcol", "alcohol" }, 
+              { "alcool", "alcohol" }, 
               { "cachorro", "dog" }, 
               { "agua", "water" }, 
               { "bola", "ball" }, 
