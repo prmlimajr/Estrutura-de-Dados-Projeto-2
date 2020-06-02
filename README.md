@@ -12,7 +12,7 @@ String [ ][ ] dic = { {"cachorro","dog"}, {"gato", "cat"}, {"água", "water”},
 
 - - - - 
 
-- [ ] __2 - Utilizar uma árvore binária de busca para fazer a ordenação da estrutura com duas palavras (String), tipo um dicionário com a palavra e a tradução (Português/Inglês). Enviar os dados para a árvore e depois gerar uma estrutura de volta com os dados ordenados. Considere a classe NoArvore abaixo para armazenar as palavras (português/Inglês) na árvore. Usar a linguagem JAVA para essa tarefa. Colocar no teste a opção de ordenar por qualquer uma das línguas.__
+- [X] __2 - Utilizar uma árvore binária de busca para fazer a ordenação da estrutura com duas palavras (String), tipo um dicionário com a palavra e a tradução (Português/Inglês). Enviar os dados para a árvore e depois gerar uma estrutura de volta com os dados ordenados. Considere a classe NoArvore abaixo para armazenar as palavras (português/Inglês) na árvore. Usar a linguagem JAVA para essa tarefa. Colocar no teste a opção de ordenar por qualquer uma das línguas.__
 
 - - - - 
 
