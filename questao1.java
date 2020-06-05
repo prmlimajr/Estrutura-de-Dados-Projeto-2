@@ -1,8 +1,9 @@
+ 
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
  
-public class questao1 {
+public class Questão1 {
     static Locale locale = new Locale("pt-BR");
     static Collator collator = Collator.getInstance(locale);
  
@@ -11,14 +12,33 @@ public class questao1 {
             String [][] dic = {
                     { "camelo", "camel" },
                     { "gato", "cat" } ,
+                    { "rio", "river" },
                     { "álcool", "alcohol" },
+                    { "zangado", "angry" },
+                    { "taco", "bat" },
                     { "cachorro", "dog" },
                     { "água", "water" },
+                    { "sala", "room" },
+                    { "poço", "pit" },
                     { "bola", "ball" },
                     { "peixe", "fish" },
+                    { "vida", "life" },
                     { "baleia", "whale" },
                     { "papagaio", "parrot" },
-                    { "formiga", "ant" }
+                    { "formiga", "ant" },
+                    { "navalha", "razor" },
+                    { "amarelo", "yellow" },
+                    { "verde", "green" },
+                    { "doce", "sweet" },
+                    { "março", "march" },
+                    { "uva", "grapes" },
+                    { "estado", "state" },                            
+                    { "kafkaesco", "kafkaesque" },
+                    { "hora", "hour" },
+                    { "xenofobia", "xenophobia" },
+                    { "ingresso", "ticket" },
+                    { "faca", "knife" },                                                
+                    { "queimar", "burn" },                                
                     };
            
             Scanner scan = new Scanner(System.in);
@@ -68,13 +88,17 @@ public class questao1 {
                                 }
                             }
                         }
+                        System.out.println("[ ");
                         for(int i = 0; i < dic.length; i++) {
                             for(int j = 0; j < dic[i].length; j++) {
                                 System.out.print(" - ");
-                                System.out.print("["+dic[i][j] +"]");                  
+                                System.out.print("["+dic[i][j]+"]");                   
                             }    
                             System.out.println();
+ 
                         }
+                        System.out.println();
+                        System.out.println("]");
                         continue;
                 case 0:
                     System.out.println("Até logo!");
@@ -96,3 +120,5 @@ public class questao1 {
         arr[j][0] = tempPtBR;
         arr[j][1] = tempEng;
     }
+ 
+}
