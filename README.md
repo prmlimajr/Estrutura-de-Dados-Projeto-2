@@ -20,7 +20,7 @@ String [ ][ ] dic = { {"cachorro","dog"}, {"gato", "cat"}, {"água", "water”},
 
 - - - - 
 
-- [ ] __4 - Implementar em JAVA uma árvore binária de busca para inserir e procurar palavras (português/Inglês) nessa árvore na forma de um dicionário. A busca deve procurar por uma palavra na árvore de palavras (português/Inglês). Usar as mesmas palavras da questão 4. No programa deve ser feita a tradução de Inglês=>Português. Solicitar a palavra para ser traduzida. Usar a estrutura de matriz de palavras para entrar com os dados na árvore. Considere a classe NoArvore abaixo para armazenar as palavras (português/Inglês) na árvore.__
+- [X] __4 - Implementar em JAVA uma árvore binária de busca para inserir e procurar palavras (português/Inglês) nessa árvore na forma de um dicionário. A busca deve procurar por uma palavra na árvore de palavras (português/Inglês). Usar as mesmas palavras da questão 4. No programa deve ser feita a tradução de Inglês=>Português. Solicitar a palavra para ser traduzida. Usar a estrutura de matriz de palavras para entrar com os dados na árvore. Considere a classe NoArvore abaixo para armazenar as palavras (português/Inglês) na árvore.__
 
 public class NoArvore {   
   public String por, ing ;  
