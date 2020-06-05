@@ -29,6 +29,7 @@ public class questao1 {
                     { "navalha", "razor" },
                     { "amarelo", "yellow" },
                     { "verde", "green" },
+                    { "alma", "soul" },
                     { "doce", "sweet" },
                     { "março", "march" },
                     { "uva", "grapes" },
