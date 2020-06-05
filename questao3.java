@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class questao2 {
+public class questao3 {
 
 	public static void main(String[] args) {
 		byte check;
