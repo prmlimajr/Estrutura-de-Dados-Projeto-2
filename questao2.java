@@ -2,7 +2,7 @@ import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
  
-public class Arvore {
+public class Questão2 {
     static Locale locale = new Locale("pt-BR");
     static Collator collator = Collator.getInstance(locale);
    
@@ -54,7 +54,7 @@ public class Arvore {
        
         if(aux != null) {
             Ler_Por(p.L);
-            System.out.print(aux.por + " - " + aux.ing);
+            System.out.print("[ "+aux.por + " - " + aux.ing+" ]");
             System.out.println();
             Ler_Por(p.R);
            
@@ -66,7 +66,7 @@ public class Arvore {
                
         if(aux != null) {                              
             Ler_Ing(p.L);                                      
-            System.out.print(aux.ing + " - " + aux.por);
+            System.out.print("[ "+aux.ing + " - " + aux.por+" ]");
             System.out.println();
             Ler_Ing(p.R);  
            
@@ -78,14 +78,33 @@ public class Arvore {
          String [][] dic = {
                     { "camelo", "camel" },
                     { "gato", "cat" } ,
+                    { "rio", "river" },
                     { "álcool", "alcohol" },
+                    { "zangado", "angry" },
+                    { "taco", "bat" },
                     { "cachorro", "dog" },
                     { "água", "water" },
+                    { "sala", "room" },
+                    { "poço", "pit" },
                     { "bola", "ball" },
                     { "peixe", "fish" },
+                    { "vida", "life" },
                     { "baleia", "whale" },
                     { "papagaio", "parrot" },
-                    { "formiga", "ant" }
+                    { "formiga", "ant" },
+                    { "navalha", "razor" },
+                    { "amarelo", "yellow" },
+                    { "verde", "green" },
+                    { "doce", "sweet" },
+                    { "março", "march" },
+                    { "uva", "grapes" },
+                    { "estado", "state" },                            
+                    { "kafkaesco", "kafkaesque" },
+                    { "hora", "hour" },
+                    { "xenofobia", "xenophobia" },
+                    { "ingresso", "ticket" },
+                    { "faca", "knife" },                                                
+                    { "queimar", "burn" },                                
                     };
    
     boolean flag = true;
@@ -98,7 +117,7 @@ public class Arvore {
                         + "(2 - Inglês.)%n"
                         + "(0 - Sair.)%n");
         check = scan.nextByte();
-        if(check < 0 || check < 2) {
+        if(check < 0 || check > 2) {
             System.out.println("Seleção inválida! Tente novamente: ");
             check = scan.nextByte();
         }
@@ -112,10 +131,10 @@ public class Arvore {
                         aP = insertPor(aP, dic[i][0], dic[i][1]);
                     }
                
-                    System.out.print("Ordenação por Português: [ ");
+                    System.out.print("Ordenação por Português:  ");
                     System.out.println();
                     Ler_Por(aP);
-                    System.out.println(" ]");
+                    System.out.println();
                     continue;
            
                 case 2:
@@ -127,25 +146,18 @@ public class Arvore {
                         aI = insertIng(aI, dic[i][0], dic[i][1]);
                     }
                
-                    System.out.println("Ordenação por Inglês: [ ");
-                    Ler_Ing(aI);
+                    System.out.println("Ordenação por Inglês:  ");
                     System.out.println();
-                    System.out.println(" ]");
+                    Ler_Ing(aI);                   
+                    System.out.println();
                     continue;
                
                 case 0:
                     System.out.println("Até logo!");
                     flag = false;
-            }
-       
+            }      
     }  
- 
- 
- 
-   
+     
   }
-   
-   
-   
- 
+           
 }
