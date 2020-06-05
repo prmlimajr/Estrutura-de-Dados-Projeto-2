@@ -2,7 +2,7 @@ import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
  
-public class Questão2 {
+public class questao2 {
     static Locale locale = new Locale("pt-BR");
     static Collator collator = Collator.getInstance(locale);
    
