@@ -1,3 +1,5 @@
+package datastructproject2;
+
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
@@ -53,12 +55,12 @@ public class questao4 {
             return "Elemento não encontrado";
         }
         else {
-            if (por.equalsIgnoreCase(p.por)) {
+            if (collator.equals(por, p.por)) {
                 String trad = p.por+" => "+p.ing;
                 return trad ;
             }
             else {
-                if (por.compareToIgnoreCase(p.por) > 0) {
+                if (collator.compare(por, p.por) > 0) {
                     return Ler_Por(p.R, por);
                 }
                 else {
@@ -113,6 +115,7 @@ public class questao4 {
                 { "navalha", "razor" },
                 { "amarelo", "yellow" },
                 { "verde", "green" },
+                { "alma", "soul" },
                 { "doce", "sweet" },
                 { "março", "march" },
                 { "uva", "grapes" },
@@ -148,7 +151,7 @@ public class questao4 {
                     aP = insertPor(aP, dic[i][0], dic[i][1]);
                 }
                 System.out.println("Digite a palavra que deseja a tradução: ");
-                palavra = scan.next();             
+                palavra = scan.next().toLowerCase();             
                 System.out.println(Ler_Por(aP, palavra));
                 continue;
                
@@ -160,7 +163,7 @@ public class questao4 {
                     aI = insertPor(aI, dic[i][0], dic[i][1]);
                 }
                 System.out.println("Digite a palavra que deseja a tradução: ");
-                palavra = scan.next();             
+                palavra = scan.next().toLowerCase();             
                 System.out.println(Ler_Por(aI, palavra));              
                 continue;
                

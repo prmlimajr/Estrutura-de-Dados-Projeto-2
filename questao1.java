@@ -1,4 +1,5 @@
- 
+package datastructproject2;
+
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
@@ -62,27 +63,27 @@ public class questao1 {
                     System.out.println("BUBBLE - Ordenação em PT-BR");
                     for(int lastUnsortedIndex = dic.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
                         for(int i = 0; i < lastUnsortedIndex; i++) {
-                            //int comparison = dic[i][0].compareToIgnoreCase(dic[i+1][0]);
                             int comparison = collator.compare(dic[i][0], dic[i+1][0]);
                             if(comparison > 0) {
                                 swap(dic, i, i+1);
                             }
                         }
                     }
+                    System.out.println("[ ");
                     for(int i = 0; i < dic.length; i++) {
+                    	System.out.print(dic[i][0] +" -> "+ dic[i][1]);
                         for(int j = 0; j < dic[i].length; j++) {
-                            System.out.print(" - ");
-                            System.out.print("["+dic[i][j] +"]");
                         }
                         System.out.println();
                     }
+                    System.out.println("]");
+                    
                     continue;
                 case 2:
                         System.out.println();
                         System.out.println("BUBBLE - Ordenação em ENG");
                         for(int lastUnsortedIndex = dic.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
                             for(int i = 0; i < lastUnsortedIndex; i++) {
-                                //int comparison = dic[i][1].compareToIgnoreCase(dic[i+1][1]);
                                 int comparison = collator.compare(dic[i][1], dic[i+1][1]);
                                 if(comparison > 0) {
                                     swap(dic, i, i+1);
@@ -90,15 +91,12 @@ public class questao1 {
                             }
                         }
                         System.out.println("[ ");
-                        for(int i = 0; i < dic.length; i++) {
-                            for(int j = 0; j < dic[i].length; j++) {
-                                System.out.print(" - ");
-                                System.out.print("["+dic[i][j]+"]");                   
+                        for(int i = 0; i < dic.length; i++) {   
+                        	System.out.print(dic[i][1]  +" -> "+ dic[i][0]);
+                            for(int j = 0; j < dic[i].length; j++) {                              
                             }    
                             System.out.println();
- 
                         }
-                        System.out.println();
                         System.out.println("]");
                         continue;
                 case 0:
