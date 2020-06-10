@@ -1,4 +1,3 @@
-
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
@@ -75,51 +74,52 @@ public class questao2 {
     public static void main(String[]args) {
          Scanner scan = new Scanner(System.in);
          String [][] dic = {
-                    { "camelo", "camel" },
-                    { "gato", "cat" } ,
-                    { "rio", "river" },
-                    { "álcool", "alcohol" },
-                    { "zangado", "angry" },
-                    { "taco", "bat" },
-                    { "cachorro", "dog" },
-                    { "água", "water" },
-                    { "sala", "room" },
-                    { "poço", "pit" },
-                    { "bola", "ball" },
-                    { "peixe", "fish" },
-                    { "vida", "life" },
-                    { "baleia", "whale" },
-                    { "papagaio", "parrot" },
-                    { "formiga", "ant" },
-                    { "navalha", "razor" },
-                    { "amarelo", "yellow" },
-                    { "verde", "green" },
-                    { "doce", "sweet" },
-                    { "março", "march" },
-                    { "uva", "grapes" },
-                    { "estado", "state" },                            
-                    { "kafkaesco", "kafkaesque" },
-                    { "hora", "hour" },
-                    { "xenofobia", "xenophobia" },
-                    { "ingresso", "ticket" },
-                    { "faca", "knife" },                                                
-                    { "queimar", "burn" },                                
-                    };
+                 { "camelo", "camel" },
+                 { "gato", "cat" } ,
+                 { "rio", "river" },
+                 { "álcool", "alcohol" },
+                 { "zangado", "angry" },
+                 { "taco", "bat" },
+                 { "cachorro", "dog" },
+                 { "água", "water" },
+                 { "sala", "room" },
+                 { "poço", "pit" },
+                 { "bola", "ball" },
+                 { "peixe", "fish" },
+                 { "vida", "life" },
+                 { "baleia", "whale" },
+                 { "papagaio", "parrot" },
+                 { "formiga", "ant" },
+                 { "navalha", "razor" },
+                 { "amarelo", "yellow" },
+                 { "verde", "green" },
+                 { "alma", "soul" },
+                 { "doce", "sweet" },
+                 { "março", "march" },
+                 { "uva", "grapes" },
+                 { "estado", "state" },                            
+                 { "kafkaesco", "kafkaesque" },
+                 { "hora", "hour" },
+                 { "xenofobia", "xenophobia" },
+                 { "ingresso", "ticket" },
+                 { "faca", "knife" },                                                
+                 { "queimar", "burn" },                                
+                 };
    
-    boolean flag = true;
-    byte check = -1;
+        boolean flag = true;
+        byte check = -1;
    
-    while (flag) {
+        while (flag) {
        
-        System.out.printf("Digite a língua que deseja utilizar:%n"
-                        + "(1- Português.)%n"
-                        + "(2 - Inglês.)%n"
-                        + "(0 - Sair.)%n");
-        check = scan.nextByte();
-        if(check < 0 || check > 2) {
-            System.out.println("Seleção inválida! Tente novamente: ");
+            System.out.printf("Digite a língua que deseja utilizar:%n"
+                            + "(1- Português.)%n"
+                            + "(2 - Inglês.)%n"
+                            + "(0 - Sair.)%n");
             check = scan.nextByte();
-        }
+            if(check < 0 || check > 2) {
+                System.out.println("Seleção inválida! Tente novamente: ");
+                check = scan.nextByte();
+            }
             switch (check) {
                 case 1 :
                     NoArvore aP;       
@@ -155,8 +155,8 @@ public class questao2 {
                     System.out.println("Até logo!");
                     flag = false;
             }      
-    }  
+        }  
      
-  }
+    }
            
 }

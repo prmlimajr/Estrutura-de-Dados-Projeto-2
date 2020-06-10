@@ -1,3 +1,4 @@
+
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
@@ -53,12 +54,12 @@ public class questao4 {
             return "Elemento não encontrado";
         }
         else {
-            if (por.equalsIgnoreCase(p.por)) {
+            if (collator.equals(por, p.por)) {
                 String trad = p.por+" => "+p.ing;
                 return trad ;
             }
             else {
-                if (por.compareToIgnoreCase(p.por) > 0) {
+                if (collator.compare(por, p.por) > 0) {
                     return Ler_Por(p.R, por);
                 }
                 else {
@@ -94,38 +95,37 @@ public class questao4 {
         Scanner scan = new Scanner(System.in);
        
         String [][] dic = {
-				 { "camelo", "camel" },
-               { "gato", "cat" } ,
-               { "rio", "river" },
-               { "álcool", "alcohol" },
-               { "zangado", "angry" },
-               { "taco", "bat" },
-               { "abacate", "avocado" },
-               { "cachorro", "dog" },
-               { "água", "water" },
-               { "sala", "room" },
-               { "poço", "pit" },
-               { "bola", "ball" },
-               { "peixe", "fish" },
-               { "vida", "life" },
-               { "baleia", "whale" },
-               { "papagaio", "parrot" },
-               { "formiga", "ant" },
-               { "navalha", "razor" },
-               { "amarelo", "yellow" },
-               { "verde", "green" },
-               { "alma", "soul" },
-               { "doce", "sweet" },
-               { "março", "march" },
-               { "uva", "grapes" },
-               { "estado", "state" },                            
-               { "kafkaesco", "kafkaesque" },
-               { "hora", "hour" },
-               { "xenofobia", "xenophobia" },
-               { "ingresso", "ticket" },
-               { "faca", "knife" },                                                
-               { "queimar", "burn" },                                
-               };
+                { "camelo", "camel" },
+                { "gato", "cat" } ,
+                { "rio", "river" },
+                { "álcool", "alcohol" },
+                { "zangado", "angry" },
+                { "taco", "bat" },
+                { "cachorro", "dog" },
+                { "água", "water" },
+                { "sala", "room" },
+                { "poço", "pit" },
+                { "bola", "ball" },
+                { "peixe", "fish" },
+                { "vida", "life" },
+                { "baleia", "whale" },
+                { "papagaio", "parrot" },
+                { "formiga", "ant" },
+                { "navalha", "razor" },
+                { "amarelo", "yellow" },
+                { "verde", "green" },
+                { "alma", "soul" },
+                { "doce", "sweet" },
+                { "março", "march" },
+                { "uva", "grapes" },
+                { "estado", "state" },                            
+                { "kafkaesco", "kafkaesque" },
+                { "hora", "hour" },
+                { "xenofobia", "xenophobia" },
+                { "ingresso", "ticket" },
+                { "faca", "knife" },                                                
+                { "queimar", "burn" },                                
+                };
        
         byte check = -1;
         String palavra = "";
@@ -150,7 +150,7 @@ public class questao4 {
                     aP = insertPor(aP, dic[i][0], dic[i][1]);
                 }
                 System.out.println("Digite a palavra que deseja a tradução: ");
-                palavra = scan.next();             
+                palavra = scan.next().toLowerCase();             
                 System.out.println(Ler_Por(aP, palavra));
                 continue;
                
@@ -162,7 +162,7 @@ public class questao4 {
                     aI = insertPor(aI, dic[i][0], dic[i][1]);
                 }
                 System.out.println("Digite a palavra que deseja a tradução: ");
-                palavra = scan.next();             
+                palavra = scan.next().toLowerCase();             
                 System.out.println(Ler_Por(aI, palavra));              
                 continue;
                
