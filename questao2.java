@@ -1,3 +1,4 @@
+
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Scanner;
@@ -8,7 +9,6 @@ public class questao2 {
    
     public static NoArvore insertPor(NoArvore p, String por, String ing) {
         if (p == null) {
-            //explicit code, could be substituted by param constructor
             p = new NoArvore();              
             p.por = por;
             p.ing = ing;
@@ -29,7 +29,6 @@ public class questao2 {
     }
     public static NoArvore insertIng(NoArvore p, String por, String ing) {
         if (p == null) {
-            //explicit code, could be substituted by param constructor
             p = new NoArvore();              
             p.por = por;
             p.ing = ing;
