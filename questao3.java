@@ -92,13 +92,13 @@ public class questao3 {
 	  				System.out.println("Ordenação em PT-BR");	  						      
 	  				System.out.println("Escolha a palavra para ser traduzida: ");
 	  				word = scan.next().toLowerCase();
-		      
-	  				if (buscaPt(dicPt, word) != -1) {
-	  					hit = dicPt[buscaPt(dicPt, word)][1];
-	  					System.out.printf("A palavra " + word + " está na posição: " + buscaPt(dicPt, word)+"%n"
+	  				int index = buscaPt(dicPt, word);
+	  				if (index != -1) {
+	  					hit = dicPt[index][1];
+	  					System.out.printf("A palavra " + word + " está na posição: " + (index + 1) +"%n"
 	  									+ "A tradução de " + word +" é: "+ hit +"%n");
 	  				} else {
-	  					System.out.println("A palavra não foi encontrada. " + buscaPt(dicPt, word));
+	  					System.out.println("A palavra não foi encontrada. ");
 	  				}
 	  				continue;
 	  				
@@ -109,13 +109,13 @@ public class questao3 {
 	          
 	  				System.out.println("Escolha a palavra para ser traduzida: ");
 	  				word = scan.next().toLowerCase();
-		      
-	  				if (buscaEng(dicEng, word) != -1) {
-	  					hit = dicEng[buscaEng(dicEng, word)][0];
-	  					System.out.printf("A palavra " + word + " está na posição: " + buscaEng(dicEng, word)+"%n"
+	  				index = buscaEng(dicEng, word);
+	  				if (index != -1) {
+	  					hit = dicEng[index][0];
+	  					System.out.printf("A palavra " + word + " está na posição: " + (index + 1) +"%n"
 	  									+ "A tradução de " + word +" é: "+ hit+"%n");
 	  				} else {
-	  					System.out.println("A palavra não foi encontrada. " + buscaEng(dicEng, word));
+	  					System.out.println("A palavra não foi encontrada. ");
 	  				}
 	  				continue;
 	  				
