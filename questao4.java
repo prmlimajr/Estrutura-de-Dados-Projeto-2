@@ -159,11 +159,11 @@ public class questao4 {
                 aI = null;
                 System.out.println("Você selecionou Inglês: ");
                 for (int i = 0; i < dic.length; i++) { 
-                    aI = insertPor(aI, dic[i][0], dic[i][1]);
+                    aI = insertIng(aI, dic[i][0], dic[i][1]);
                 }
                 System.out.println("Digite a palavra que deseja a tradução: ");
                 palavra = scan.next().toLowerCase();             
-                System.out.println(Ler_Por(aI, palavra));              
+                System.out.println(Ler_Ing(aI, palavra));              
                 continue;
                
             case 0:
