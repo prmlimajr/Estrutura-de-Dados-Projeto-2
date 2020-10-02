@@ -14,12 +14,10 @@ public class questao2 {
             p.L = null;                      
             p.R = null;                      
             return p;          
-        }
-        else {
+        } else {
             if(collator.compare(por, p.por) > 0) {
                 p.R = insertPor(p.R, por, ing);
-            }
-            else {
+            } else {
                 p.L = insertPor(p.L, por, ing);
             }
             return p;
@@ -34,12 +32,10 @@ public class questao2 {
             p.L = null;                      
             p.R = null;                      
             return p;          
-        }
-        else {
+        } else {
             if(collator.compare(ing, p.ing) > 0) {
                 p.R = insertIng(p.R, por, ing);
-            }
-            else {
+            } else {
                 p.L = insertIng(p.L, por, ing);
             }
             return p;
@@ -54,8 +50,7 @@ public class questao2 {
             Ler_Por(p.L);
             System.out.print("[ "+aux.por + " - " + aux.ing+" ]");
             System.out.println();
-            Ler_Por(p.R);
-           
+            Ler_Por(p.R);      
         }    
  
     }
@@ -66,8 +61,7 @@ public class questao2 {
             Ler_Ing(p.L);                                      
             System.out.print("[ "+aux.ing + " - " + aux.por+" ]");
             System.out.println();
-            Ler_Ing(p.R);  
-           
+            Ler_Ing(p.R);          
         }  
     }
    
